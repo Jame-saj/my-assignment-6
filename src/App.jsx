@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Rating from './components/Rating'
 import Pricing from './components/backside/Pricing'
 import ThreeSteps from './components/backside/ThreeSteps'
+import Workflow from './components/backside/Workflow'
 
 function App() {
 
@@ -13,8 +14,10 @@ function App() {
       {/* <Navbar />
       <Banner />
       <Rating />
-      <ThreeSteps/> */}
+      <ThreeSteps/>
       <Pricing/>
+      <Workflow/> */}
+
     </>
   )
 }

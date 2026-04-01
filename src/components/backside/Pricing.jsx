@@ -5,7 +5,7 @@ const Pricing = () => {
   return (
     <div className="container mx-auto pt-20 pb-20">
       <div className="text-center">
-        <h1 className="font-extrabold text-3xl pb-3">
+        <h1 className="font-extrabold text-4xl pb-3">
           Simple, Transparent Pricing
         </h1>
         <p className="font-light text-[#627382FF]">
@@ -87,7 +87,7 @@ const Pricing = () => {
                 <p className="text-white">Advanced analytics</p>
               </div>
             </div>
-            <button className="btn btn-primary w-full rounded-full bg-white text-[purple] text-2xl mt-6">
+            <button className="w-full rounded-full bg-white text-[purple] text-xl p-2.5 mt-6">
               Start Pro Trial
             </button>
           </div>
