@@ -1,0 +1,61 @@
+import React, { useState } from 'react';
+import greenCheck from "../../assets/products/Check.png"
+const ProductCard = ({ product }) => {
+   const [isBuyNow, setIsBuyNow] = useState(false);
+  return (
+    <div>
+      <div key={product.id} className="  bg-white rounded-lg">
+        <div className="border-amber-50  p-6 h-full relative">
+          <p className="absolute top-0 right-4 bg-yellow-100 text-yellow-600 text-xs px-3 py-1 rounded-full">
+            {product.tag}
+          </p>
+          <img
+            className="bg-white mb-3 rounded-full h-11 w-11"
+            src={product.icon}
+            alt=""
+          />
+          <p className="font-bold mt-4 mb-4 text-2xl">{product.name}</p>
+          <p className="text-[#627382FF] mb-4">{product.description}</p>
+          <p className="font-bold mb-4 text-2xl">
+            ${product.price}
+            <span className="text-[16px] text-[#627382FF]">
+              /{product.period}
+            </span>
+          </p>
+          <div className="text-[#627382FF] mb-4">
+            <div className="flex gap-2">
+              <img src={greenCheck} alt="" />
+              <p>{product.features[0]}</p>
+            </div>
+            <div className="flex gap-2">
+              <img src={greenCheck} alt="" />
+              <p>{product.features[1]}</p>
+            </div>
+            <div className="flex gap-2">
+              <img src={greenCheck} alt="" />
+              <p>{product.features[2]}</p>
+            </div>
+            <div className="flex gap-2">
+              <img src={greenCheck} alt="" />
+              <p>{product.features[3]}</p>
+            </div>
+          </div>
+          <button
+            onClick={() => setIsBuyNow(true)}
+            className="btn w-full rounded-full  btn-primary"
+          >
+            {isBuyNow ? (
+              <button className="btn w-full rounded-full  btn-success">
+                Already Added to Cart
+              </button>
+            ) : (
+              'Buy Now'
+            )}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;

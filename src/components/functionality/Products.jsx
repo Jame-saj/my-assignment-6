@@ -1,30 +1,27 @@
 import React, { use } from 'react';
 
+import ProductCard from './ProductCard';
+
 const Products = ({ productsPromise }) => {
   const products = use(productsPromise)
-  console.log(products)
+ 
+
   return (
-    <div className='py-20'>
-      <div>
-        <div className='text-center'>
-          <h1 className='text-5xl font-bold'>Premium Digital Tools</h1>
-        <p>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
+    <div className="py-20">
+      <div className="container mx-auto">
+        <div className="text-center">
+          <h1 className="text-5xl font-bold mb-4">Premium Digital Tools</h1>
+          <p className="text-[#627382FF]">
+            Choose from our curated collection of premium digital products
+            designed <br /> to boost your productivity and creativity.
+          </p>
         </div>
-        <div>
-          {
-            products.map(product => <div>
-              <div>
-
-                <img src={product.icon} alt="" />
-                </div>
-
-            </div>) 
-          }
+        <div className="grid grid-cols-3 mx-auto mt-8 gap-6">
+          {products.map(product => (
+            <ProductCard product={product} />
+          ))}
         </div>
-
-     
       </div>
-      
     </div>
   );
 };
