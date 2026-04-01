@@ -1,4 +1,37 @@
-# React + Vite
+1.Project Name:
+DigiTools Platform
+
+
+2.A Little Description:
+This is a simple React-based e-commerce web application where users can browse products, add them to cart, remove items, and proceed to checkout.
+
+
+3.Technologies Used:
+React.js
+JavaScript (ES6)
+CSS / Tailwind CSS
+React Toastify
+Git & GitHub
+
+
+4.Three Features About the Project: 
+Users can add products to the cart and see the updated cart count in the navbar.
+Users can remove individual products from the cart using the remove button.
+Users can proceed to checkout, which clears all items from the cart and shows a notification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -13,4 +46,4 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 ## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project. -->
