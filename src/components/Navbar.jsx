@@ -3,10 +3,10 @@ import cartImg from "../assets/products/shopping-cart.png"
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="shadow-lg">
       <div className="container mx-auto navbar p-6 items-center">
         <div className="navbar-start">
-          <a className=" text-4xl font-extrabold bg-gradient-to-r from-purple-800 to-blue-500  bg-clip-text text-transparent">
+          <a className=" text-5xl font-extrabold bg-gradient-to-r from-purple-800 to-blue-500  bg-clip-text text-transparent">
             DigiTools
           </a>
         </div>

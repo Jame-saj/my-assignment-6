@@ -24,23 +24,30 @@ function App() {
       <Navbar />
       <Banner />
       <Rating />
-      <div className="tabs tabs-box justify-center bg-transparent gap-3">
-        <input
-          type="radio"
-          name="my_tabs_1"
-          className="tab text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-xl font-bold w-40"
-          aria-label="Products"
+
+      <div className="flex justify-center gap-3 mt-5">
+       <button
           onClick={() => setActiveTab('Products')}
-          defaultChecked
-        />
-        <input
-          type="radio"
-          name="my_tabs_1"
-          className="tab text-xl font-bold rounded-full w-40"
-          aria-label={`cart(${carts.length})`}
+          className={`w-40 rounded-full text-xl font-bold py-2 ${
+            activeTab === 'Products'
+              ? 'text-white bg-gradient-to-r from-purple-600 to-blue-600'
+              : 'bg-white text-purple-400 border'
+          }`}
+        >
+          Products
+        </button>
+        <button
           onClick={() => setActiveTab('Cart')}
-        />
+          className={`w-40 rounded-full text-xl font-bold py-2 ${
+            activeTab === 'Cart'
+              ? 'text-white bg-gradient-to-r from-purple-600 to-blue-600'
+              : 'text-blue-400 border bg-white  '
+          }`}
+        >
+          Cart ({carts.length})
+        </button>
       </div>
+
       {activeTab === 'Products' && (
         <Products
           carts={carts}

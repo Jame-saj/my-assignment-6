@@ -4,7 +4,7 @@ import play from "../assets/products/Play.png"
 
 const Banner = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-10">
       <div className="flex py-20 items-center justify-between">
         <div className="right space-y-4">
           <div className="inline-flex gap-1 bg-blue-100 p-1 rounded-full items-center mb-3.5">
@@ -15,7 +15,7 @@ const Banner = () => {
           </div>
           <p className="text-6xl space-y-1 font-bold">
             Supercharge Your <br />
-            <span className='className=" text-6xl font-extrabold bg-gradient-to-r from-purple-800 to-blue-500  bg-clip-text text-transparent'>
+            <span className='className=" text-6xl font-extrabold bg-gradient-to-r from-purple-800 to-blue-500 mt-1  bg-clip-text text-transparent'>
               {' '}
               Digital Workflow
             </span>
