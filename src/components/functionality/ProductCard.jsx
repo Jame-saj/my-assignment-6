@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import greenCheck from "../../assets/products/Check.png"
-const ProductCard = ({ product }) => {
-   const [isBuyNow, setIsBuyNow] = useState(false);
+import greenCheck from '../../assets/products/Check.png';
+const ProductCard = ({ product, carts, setCarts }) => {
+  const [isBuyNow, setIsBuyNow] = useState(false);
+  const handleBuyNow = () => {
+    setIsBuyNow(true);
+    setCarts([...carts, product]);
+  };
   return (
     <div>
       <div key={product.id} className="  bg-white rounded-lg">
@@ -41,16 +45,15 @@ const ProductCard = ({ product }) => {
             </div>
           </div>
           <button
-            onClick={() => setIsBuyNow(true)}
-            className="btn w-full rounded-full  btn-primary"
+            disabled={isBuyNow}
+            onClick={handleBuyNow}
+            className={`btn w-full rounded-full   ${
+              isBuyNow
+                ? 'bg-green-500 text-white text-xl font-bold'
+                : 'bg-gradient-to-r from-purple-600 to-blue-600 text-xl text-white '
+            }`}
           >
-            {isBuyNow ? (
-              <button className="btn w-full rounded-full  btn-success">
-                Already Added to Cart
-              </button>
-            ) : (
-              'Buy Now'
-            )}
+            {isBuyNow ? 'Already Added to Cart' : 'Buy Now'}
           </button>
         </div>
       </div>

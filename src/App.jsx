@@ -7,6 +7,8 @@ import ThreeSteps from './components/backside/ThreeSteps';
 import Workflow from './components/backside/Workflow';
 import Footer from './components/backside/Footer';
 import Products from './components/functionality/Products';
+import Cart from './components/functionality/Cart'
+import { useState } from 'react';
 
 const getProducts = async () => {
   const res = await fetch('/data.json');
@@ -15,16 +17,43 @@ const getProducts = async () => {
 const productsPromise = getProducts();
 
 function App() {
+  const [activeTab, setActiveTab] = useState("Products");
+  const[carts, setCarts]=useState([])
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Banner />
       <Rating />
-      <ThreeSteps/>
-      <Pricing/>
-      <Workflow/>
-      <Footer/> */}
-      <Products productsPromise={productsPromise} />
+      <div className="tabs tabs-box justify-center bg-transparent">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-full w-40"
+          aria-label="Products"
+          onClick={() => setActiveTab('Products')}
+          defaultChecked
+        />
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full w-40"
+          aria-label="Cart"
+          onClick={() => setActiveTab('Cart')}
+        />
+      </div>
+      {activeTab === 'Products' && (
+        <Products
+          carts={carts}
+          setCarts={setCarts}
+          productsPromise={productsPromise}
+        />
+      )}
+      {activeTab === 'Cart' && <Cart carts={carts} setCarts={setCarts} />}
+
+      <ThreeSteps />
+      <Pricing />
+      <Workflow />
+      <Footer />
     </>
   );
 }

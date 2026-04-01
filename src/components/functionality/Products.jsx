@@ -2,7 +2,7 @@ import React, { use } from 'react';
 
 import ProductCard from './ProductCard';
 
-const Products = ({ productsPromise }) => {
+const Products = ({ productsPromise, carts, setCarts }) => {
   const products = use(productsPromise)
  
 
@@ -18,7 +18,12 @@ const Products = ({ productsPromise }) => {
         </div>
         <div className="grid grid-cols-3 mx-auto mt-8 gap-6">
           {products.map(product => (
-            <ProductCard product={product} />
+            <ProductCard
+              carts={carts}
+              setCarts={setCarts}
+              key={product.id}
+              product={product}
+            />
           ))}
         </div>
       </div>
