@@ -14,7 +14,7 @@
       "Export to PDF",
       "AI suggestions"
     ],
-    "icon": "../src/assets/products/writting.png"
+    "icon": "./writting.png"
   },
   {
     "id": 2,
@@ -30,7 +30,7 @@
       "Drag & drop builder",
       "SEO optimized"
     ],
-    "icon": "../src/assets/products/design-tool.png"
+    "icon": "./design-tool.png"
   },
   {
     "id": 3,
@@ -46,7 +46,7 @@
       "Notes & feedback",
       "Status updates"
     ],
-    "icon": "../src/assets/products/camera.png"
+    "icon": "./camera.png"
   },
   {
     "id": 4,
@@ -62,7 +62,7 @@
       "Headline generator",
       "Engagement tips"
     ],
-    "icon": "../src/assets/products/operation.png"
+    "icon": "./operation.png"
   },
   {
     "id": 5,
@@ -78,7 +78,7 @@
       "Multiple formats",
       "Download as PDF"
     ],
-    "icon": "../src/assets/products/portfolio.png"
+    "icon": "./portfolio.png"
   },
   {
     "id": 6,
@@ -94,7 +94,7 @@
       "Expert tips",
       "Video practice"
     ],
-    "icon": "../src/assets/products/social-media.png"
+    "icon": "./social-media.png"
   },
   {
     "id": 7,
@@ -110,7 +110,7 @@
       "Progress tracking",
       "Certification"
     ],
-    "icon": "../src/assets/products/barchart.ico"
+    "icon": "./barchart.ico"
   },
   {
     "id": 8,
@@ -126,6 +126,6 @@
       "Invoice generator",
       "Contract samples"
     ],
-    "icon": "../src/assets/products/dollar.ico"
+    "icon": "./dollar.ico"
   }
 ]
