@@ -12,7 +12,7 @@ const Pricing = () => {
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-7 items-stretch mt-5">
+      <div className="grid grid-cols-3 gap-7 items-stretch mt-7">
         {/* 1st */}
         <div className="bg-white px-6 py-6 space-y-6 rounded-2xl flex flex-col justify-between h-full">
           <div>
@@ -47,7 +47,9 @@ const Pricing = () => {
         </div>
         {/* 2nd */}
         <div className=" relative bg-gradient-to-r from-purple-700 to-blue-600 px-6 py-6 space-y-6 rounded-2xl flex flex-col justify-between h-full">
-          <div className="absolute  top-2 right-3">Most Popular</div>
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#fef3c6FF] text-[#bb4d00FF] px-4 py-1 text-sm font-semibold rounded-full shadow">
+            Most Popular
+          </div>
           <div className="space-y-3 pb-3 rounded-2xl">
             <div>
               <h1 className="font-extrabold text-white text-2xl">Pro</h1>
@@ -85,7 +87,7 @@ const Pricing = () => {
                 <p className="text-white">Advanced analytics</p>
               </div>
             </div>
-            <button className="btn btn-primary w-full rounded-full bg-white text-[purple] text-2xl">
+            <button className="btn btn-primary w-full rounded-full bg-white text-[purple] text-2xl mt-6">
               Start Pro Trial
             </button>
           </div>
