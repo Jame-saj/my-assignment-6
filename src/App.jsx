@@ -2,6 +2,7 @@ import './App.css'
 import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import Rating from './components/Rating'
+import Pricing from './components/backside/Pricing'
 import ThreeSteps from './components/backside/ThreeSteps'
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
     <>
       {/* <Navbar />
       <Banner />
-      <Rating /> */}
-      <ThreeSteps/>
+      <Rating />
+      <ThreeSteps/> */}
+      <Pricing/>
     </>
   )
 }
