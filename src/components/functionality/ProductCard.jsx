@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import greenCheck from '../../assets/products/Check.png';
+import { toast } from 'react-toastify';
 const ProductCard = ({ product, carts, setCarts }) => {
   const [isBuyNow, setIsBuyNow] = useState(false);
   const handleBuyNow = () => {
     setIsBuyNow(true);
     setCarts([...carts, product]);
+    toast.success("Products added to Cart successfully")
   };
   return (
     <div>

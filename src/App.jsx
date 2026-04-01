@@ -24,11 +24,11 @@ function App() {
       <Navbar />
       <Banner />
       <Rating />
-      <div className="tabs tabs-box justify-center bg-transparent">
+      <div className="tabs tabs-box justify-center bg-transparent gap-3">
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-full w-40"
+          className="tab text-white bg-gradient-to-r from-purple-600 to-blue-600 rounded-full text-xl font-bold w-40"
           aria-label="Products"
           onClick={() => setActiveTab('Products')}
           defaultChecked
@@ -36,8 +36,8 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full w-40"
-          aria-label="Cart"
+          className="tab text-xl font-bold rounded-full w-40"
+          aria-label={`cart(${carts.length})`}
           onClick={() => setActiveTab('Cart')}
         />
       </div>

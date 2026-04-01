@@ -7,7 +7,7 @@ const Products = ({ productsPromise, carts, setCarts }) => {
  
 
   return (
-    <div className="py-20">
+    <div className="py-15">
       <div className="container mx-auto">
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-4">Premium Digital Tools</h1>
