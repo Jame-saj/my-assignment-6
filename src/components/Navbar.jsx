@@ -11,7 +11,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="navbar-center  sm:hidden md:flex lg:flex">
+        <div className="navbar-center hidden md:flex">
           <ul className="menu text-black menu-horizontal font-medium px-1">
             <li>
               <a>Products</a>

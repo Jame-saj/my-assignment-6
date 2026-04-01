@@ -4,9 +4,9 @@ import play from "../assets/products/Play.png"
 
 const Banner = () => {
   return (
-    <div className="container mx-auto px-10">
+    <div className="container  mx-auto px-4 md:px-10">
       <div className="flex py-20 items-center justify-between">
-        <div className="right space-y-4">
+        <div className="right space-y-4 text-center md:text-left">
           <div className="inline-flex gap-1 bg-blue-100 p-1 rounded-full items-center mb-3.5">
             <span className="loading bg-blue-500 loading-ring loading-xs"></span>
             <p className="bg-gradient-to-r from-purple-800 to-blue-500 bg-clip-text text-[20px] p-1 text-transparent">
@@ -27,7 +27,7 @@ const Banner = () => {
             <br />
             Explore Products
           </p>
-          <div className="flex gap-1.5 ">
+          <div className="flex flex-col sm:flex-row gap-3 ">
             <button className="btn btn-primary rounded-full bg-gradient-to-r from-blue-600 to-purple-600">
               Explore Products
             </button>
@@ -38,7 +38,7 @@ const Banner = () => {
         </div>
 
         <div className="left flex justify-end">
-          <img src={bannerImg} alt="" />
+          <img className="w-full max-w-md md:max-w-lg" src={bannerImg} alt="" />
         </div>
       </div>
     </div>

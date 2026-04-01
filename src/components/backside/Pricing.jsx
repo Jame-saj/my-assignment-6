@@ -12,7 +12,7 @@ const Pricing = () => {
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-7 items-stretch mt-7">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch mt-7">
         {/* 1st */}
         <div className="bg-white px-6 py-6 space-y-6 rounded-2xl flex flex-col justify-between h-full">
           <div>

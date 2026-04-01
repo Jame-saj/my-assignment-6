@@ -12,7 +12,7 @@ const ThreeSteps = () => {
           Start using premium digital tools in minutes, not hours.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-1.5 pt-7 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-7">
         <div className="text-center p-8 w-sm border-[ #f1f1f1FF] bg-[#ffffffFF] rounded-2xl relative items-center">
           <div className="absolute top-2 right-3 bg-purple-500 text-white w-7 h-7 rounded-2xl items-center ">
             01
@@ -30,7 +30,7 @@ const ThreeSteps = () => {
             </p>
           </div>
         </div>
-        <div className="text-center p-8 w-sm border-[ #f1f1f1FF] bg-[#ffffffFF] rounded-2xl relative items-center">
+        <div className="text-center p-8 max-w-sm border-[ #f1f1f1FF] bg-[#ffffffFF] rounded-2xl relative items-center">
           <div className="absolute top-2 right-3 bg-purple-500 text-white w-7 h-7 rounded-2xl items-center">
             02
           </div>
